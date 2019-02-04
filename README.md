@@ -4,15 +4,16 @@ A set of Python scripts and notebooks to help generate route creation for Naviga
 ## Notebooks
 
 Several example Jupyter notebooks are provided to demonstrate some more advanced workflows that are possible via the ArcGIS API for Python and Navigator:
-- [1 - Automating creation of pre-planned routes](notebooks/examples/1%20-%20Automating%20creation%20of%20pre-planned%20routes.ipynb)
-
+- [1 - URL Scheme Examples](notebooks/examples/1%20-%20URL%20Scheme%20Examples.ipynb)
+- [2 - Automating creation of pre-planned routes](notebooks/examples/1%20-%20Automating%20creation%20of%20pre-planned%20routes.ipynb)
 
 ### Instructions
 
 
 1. Install ArcGIS API for Python package as described [here](https://developers.arcgis.com/python/guide/install-and-set-up/).
 2. Clone or download this repository
-3. Run `Jupyter Notebook`
+3. Open `./notebooks` directory in terminal
+3. `jupyter notebook` (to start a jupyter notebook server)
 
 ## Resources
 
