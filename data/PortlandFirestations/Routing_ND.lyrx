@@ -1,0 +1,335 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.4.0",
+  "build" : 18935,
+  "layers" : [
+    "CIMPATH=basemap/main_routing_nd.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMNetworkDatasetLayer",
+      "name" : "Routing_ND",
+      "uRI" : "CIMPATH=basemap/main_routing_nd.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{92DA18A5-3EDE-4126-A7A7-CF3BF56F4FC4}"
+      },
+      "layerType" : "BasemapBackground",
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : true,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "dataConnection" : {
+        "type" : "CIMFeatureDatasetDataConnection",
+        "featureDataset" : "main.Routing",
+        "workspaceConnectionString" : "DATABASE=.\\northamerica.geodatabase",
+        "workspaceFactory" : "SqlLite",
+        "dataset" : "main.Routing_ND",
+        "datasetType" : "esriDTNetworkDataset"
+      },
+      "dirtyAreaRenderer" : {
+        "type" : "CIMNetworkDatasetSimpleRenderer",
+        "label" : "Dirty Areas",
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMPolygonSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 0.69999999999999996,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    110,
+                    110,
+                    110,
+                    100
+                  ]
+                }
+              },
+              {
+                "type" : "CIMSolidFill",
+                "enable" : true,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    128,
+                    128,
+                    255,
+                    30
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "edgeRenderer" : {
+        "type" : "CIMNetworkDatasetSimpleRenderer",
+        "label" : "Edges",
+        "symbol" : {
+          "type" : "CIMSymbolReference",
+          "symbol" : {
+            "type" : "CIMLineSymbol",
+            "symbolLayers" : [
+              {
+                "type" : "CIMSolidStroke",
+                "enable" : true,
+                "capStyle" : "Round",
+                "joinStyle" : "Round",
+                "lineStyle3D" : "Strip",
+                "miterLimit" : 10,
+                "width" : 1,
+                "color" : {
+                  "type" : "CIMRGBColor",
+                  "values" : [
+                    178,
+                    178,
+                    178,
+                    100
+                  ]
+                }
+              }
+            ]
+          }
+        }
+      },
+      "networkSourceDisplayFilters" : [
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.Routing_Streets",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.Custom_Streets",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.Routing_Streets_Override",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.Custom_Streets_Override",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.Routing_ND_Junctions",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.RestrictedTurns",
+          "visible" : true
+        },
+        {
+          "type" : "CIMNetworkSourceDisplayFilter",
+          "networkSource" : "main.Custom_Turns",
+          "visible" : true
+        }
+      ],
+      "trafficNetworkAttribute" : "TravelTime",
+      "trafficRenderer" : {
+        "type" : "CIMNetworkDatasetTrafficRenderer",
+        "label" : "Traffic",
+        "visible" : true,
+        "breaks" : [
+          {
+            "type" : "CIMClassBreak",
+            "description" : "Stop and Go",
+            "label" : "Stop and Go",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 3,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        200,
+                        0,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 0.45000000000000001
+          },
+          {
+            "type" : "CIMClassBreak",
+            "description" : "Slow",
+            "label" : "Slow",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 3,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        170,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 0.65000000000000002
+          },
+          {
+            "type" : "CIMClassBreak",
+            "description" : "Moderate",
+            "label" : "Moderate",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 3,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        255,
+                        255,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 0.84999999999999998
+          },
+          {
+            "type" : "CIMClassBreak",
+            "description" : "Free Flow",
+            "label" : "Free Flow",
+            "patch" : "Default",
+            "symbol" : {
+              "type" : "CIMSymbolReference",
+              "symbol" : {
+                "type" : "CIMLineSymbol",
+                "symbolLayers" : [
+                  {
+                    "type" : "CIMSolidStroke",
+                    "enable" : true,
+                    "capStyle" : "Round",
+                    "joinStyle" : "Round",
+                    "lineStyle3D" : "Strip",
+                    "miterLimit" : 10,
+                    "width" : 3,
+                    "color" : {
+                      "type" : "CIMRGBColor",
+                      "values" : [
+                        0,
+                        215,
+                        0,
+                        100
+                      ]
+                    }
+                  }
+                ]
+              }
+            },
+            "upperBound" : 100
+          }
+        ],
+        "drawLineWidthByHierarchyLevelIndex" : true,
+        "interiorLineWidthsByHierarchyLevelIndex" : [
+          2.75,
+          1.5,
+          0.75
+        ],
+        "lineCasingsColor" : {
+          "type" : "CIMRGBColor",
+          "values" : [
+            0,
+            0,
+            0,
+            100
+          ]
+        },
+        "scaleFilters" : [
+          25000,
+          75000,
+          2500000,
+          12000000
+        ],
+        "useDerivedLineCasingsColor" : true,
+        "useLineCasings" : true,
+        "useScaleFilters" : true
+      }
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{92DA18A5-3EDE-4126-A7A7-CF3BF56F4FC4}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth",
+      "visibility" : true,
+      "expanded" : false
+    }
+  ]
+}

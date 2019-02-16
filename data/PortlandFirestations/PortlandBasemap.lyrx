@@ -1,0 +1,59 @@
+{
+  "type" : "CIMLayerDocument",
+  "version" : "2.4.0",
+  "build" : 18935,
+  "layers" : [
+    "CIMPATH=basemap/portlandbasemap.xml"
+  ],
+  "layerDefinitions" : [
+    {
+      "type" : "CIMVectorTileLayer",
+      "name" : "PortlandBasemap",
+      "uRI" : "CIMPATH=basemap/portlandbasemap.xml",
+      "sourceModifiedTime" : {
+        "type" : "TimeInstant"
+      },
+      "useSourceMetadata" : true,
+      "layerElevation" : {
+        "type" : "CIMLayerElevationSurface",
+        "mapElevationID" : "{92DA18A5-3EDE-4126-A7A7-CF3BF56F4FC4}"
+      },
+      "layerType" : "BasemapBackground",
+      "maxScale" : 70.531073500000005,
+      "minScale" : 295828763.79577702,
+      "showLegends" : true,
+      "visibility" : true,
+      "displayCacheType" : "Permanent",
+      "maxDisplayCacheAge" : 5,
+      "showPopups" : false,
+      "serviceLayerID" : -1,
+      "refreshRate" : -1,
+      "refreshRateUnit" : "esriTimeUnitsSeconds",
+      "dataConnection" : {
+        "type" : "CIMVectorTileDataConnection",
+        "uRI" : ".\\PortlandBasemap.vtpk"
+      }
+    }
+  ],
+  "elevationSurfaces" : [
+    {
+      "type" : "CIMMapElevationSurface",
+      "elevationMode" : "BaseGlobeSurface",
+      "name" : "Ground",
+      "verticalExaggeration" : 1,
+      "mapElevationID" : "{92DA18A5-3EDE-4126-A7A7-CF3BF56F4FC4}",
+      "color" : {
+        "type" : "CIMRGBColor",
+        "values" : [
+          255,
+          255,
+          255,
+          100
+        ]
+      },
+      "surfaceTINShadingMode" : "Smooth",
+      "visibility" : true,
+      "expanded" : false
+    }
+  ]
+}
