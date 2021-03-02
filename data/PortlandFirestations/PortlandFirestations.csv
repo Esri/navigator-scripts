@@ -1,0 +1,18 @@
+OBJECTID,Source_Ori,FType,FCode,PointLocat,Name,Address,City,State,Zipcode,Source_Fea,AddressBui,GNIS_ID,fmupddat,lat_dec,lon_dec
+1,MEGIS,740,74026,1,Portland Fire Department - Bramhall Station,784 Congress St,Portland,ME,04101, , , ,12/31/2012,43.653439390000003,-70.272191079999999
+2,MEGIS,740,74026,4,Portland Fire Department - East Deering Station,474 Ocean Ave,Portland,ME,04101, , , ,12/31/2012,43.684956090000000,-70.271615389999994
+3,MEGIS,740,74026,4,Portland Fire Department - Munjoy Station,134 Congress St,Portland,ME,04101, , , ,12/31/2012,43.665556330000001,-70.248078980000003
+4,MEGIS,740,74026,0,Portland FIre Department - Northgate,Allen Ave,Portland,ME,04101, , , ,12/31/2012,43.700995769999999,-70.287249660000001
+5,MEGIS,740,74026,1,South Portland Fire Department - Western Avenue,34 James Baka Dr,South Portland,ME,04106, , , ,12/31/2012,43.638508399999999,-70.321112400000004
+6,MEGIS,740,74026,1,South Portland Fire Department - Cash Corner,360 Main St,South Portland,ME,04106, , , ,12/31/2012,43.628463619999998,-70.293596309999998
+7,MEGIS,740,74026,1,South Portland Fire Department - Central Station,684 Broadway,South Portland,ME,04106, , , ,12/31/2012,43.633541530000002,-70.257244080000007
+8,MEGIS,740,74026,1,Westbrook Fire and Rescue - Station 1,570 Main St,Westbrook,ME,04092, , , ,12/31/2012,43.679183790000003,-70.354169249999998
+9,MEGIS,740,74026,0,LONG ISLAND FIRE AND RESCUE,488 Island Av,Long Island,ME,04050, , , ,12/31/2012,43.692547660000002,-70.158815099999998
+10,MEGIS,740,74026,0,WESTBROOK FIRE AND RESCUE STATION 3,768 Bridgton Rd,Westbrook,ME,04092, , , ,12/31/2012,43.726428230000003,-70.342427610000001
+11,MEGIS,740,74026,1,Scarborough Fire Department - North Scarborough Station,16 Saco St,Scarborough,ME,04074, , , ,12/31/2012,43.641692030000002,-70.398204379999996
+12,MEGIS,740,74026,1,Portland Fire Department,380 Congress St,Portland,ME,04101, , , ,12/31/2012,43.659256839999998,-70.255774279999997
+13,MEGIS,740,74026,1,Falmouth Fire EMS Department - Central Station,8 Bucknam Rd,Falmouth,ME,04105, , , ,12/31/2012,43.725856610000001,-70.233441780000007
+14,MEGIS,740,74026,4,South Portland Fire Department - Willard Hose Company,Pillsbury St,South Portland,ME,04106, , , ,12/31/2012,43.638514729999997,-70.230817889999997
+15,MEGIS,740,74026,1,Falmouth Fire EMS Department - Foreside Station,287 Foreside Rd,Falmouth,ME,04105, , , ,12/31/2012,43.736021659999999,-70.206624189999999
+16,MEGIS,740,74026,1,Cape Cottage Fire Station,552 Shore Rd,Cape Elizabeth,ME,04107, , , ,12/31/2012,43.633682579999999,-70.226372659999996
+17,MEGIS,740,74026,4,South Portland Fire Department - Engine 6,15 Union St,South Portland,ME,04106, , , ,12/31/2012,43.623360450000000,-70.300119100000003

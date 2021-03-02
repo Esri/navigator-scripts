@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<db_schemas>
+  <db_schema>
+    <table name="main.Profiles">
+      <indices>
+        <index name="FDO_OBJECTID">
+          <field name="OBJECTID"/>
+        </index>
+      </indices>
+      <sp_ind_grid_count>0</sp_ind_grid_count>
+      <domain_maxy>0x      937BC6E600</domain_maxy>
+      <domain_miny>0x80000400       0</domain_miny>
+      <domain_maxx>0x      937C9741C0</domain_maxx>
+      <domain_minx>0x    7FFE1F799ADC</domain_minx>
+      <tolerance_xy>0x  73005F  740073</tolerance_xy>
+    </table>
+  </db_schema>
+</db_schemas>
